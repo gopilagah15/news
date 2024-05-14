@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card1{
+  box-shadow: 1px 3px 3px 0px #ffb8b8;
+  border-radius: 7px;
+  transition: 0.2s;
+} 
+.card1:hover{
+  box-shadow: 1px 3px 4px 9px #e5c1c1; 
+}
