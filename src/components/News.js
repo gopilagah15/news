@@ -32,7 +32,8 @@ export class News extends Component {
     }
     async updateNews(){
         this.props.setProgress(10);
-        let url =`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=9f13f8cd816b4d3a83ac7385e5618eb2&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        let url =`https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=062e8aeb3bd546a88e918d2ec4555139&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        // let url =`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=9f13f8cd816b4d3a83ac7385e5618eb2&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         this.setState({loading:true});
         let data = await fetch(url);
         this.props.setProgress(30);
